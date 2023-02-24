@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Natega</title>
+    <meta property="og:title" content="yaseenAshraf:Natega" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="icon" 
+    type="image/png" 
+    href="assets/icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <style>
+      @import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+      .af{
+        font-family: 'Lateef', serif;
+        font-size: 24px;
+      }
+    </style>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div>
+      <div class="home-container">
+        <header data-role="Header" class="home-header">
+          <a href="https://natega.site/"><img
+            alt="logo"
+            src="assets/logo.png"
+            class="home-image"
+          /></a>
+        </header>
+        <div class="home-container2">
+          <button class="home-button button" id="stat_btn">Show Result Statistics</button>
+          <button class="home-button button" id="rank_btn" style="margin-top: 10px;">Show Top 50 Rank</button>
+          <div class="home-separator"></div>
+          <input
+            type="text"
+            required=""
+            autofocus=""
+            placeholder="Seating No."
+            class="home-seat-no input"
+            id="st_id"
+          />
+          <button class="home-search button" id="search_btn">
+            <span class="home-text">
+              <span>Search</span>
+              <br />
+            </span>
+          </button>
+        </div>
+        <div class="home-social-bar">
+          © 2023. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
