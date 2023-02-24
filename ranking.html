@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Natega</title>
+    <meta property="og:title" content="yaseenAshraf:Natega" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="icon" 
+    type="image/png" 
+    href="assets/icon.ico">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font"
+    />
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <style>
+      @import url(https://fonts.googleapis.com/earlyaccess/scheherazade.css);
+      .af{
+        font-family: 'Scheherazade', serif;
+      }
+      td,th {
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+      }
+    </style>
+    <link rel="stylesheet" href="css/ranking.css">
+  </head>
+  <body>
+    <div>
+      <div class="home-container">
+        <header data-role="Header" class="home-header">
+          <a href="https://natega.site/"><img
+            alt="logo"
+            src="assets/logo.png"
+            class="home-image"
+          /></a>
+        </header>
+        <div class="home-container2">
+          <html>
+            <head>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+            </head>
+        <body class="page-leaderboard">
+          <section class="ranking" dir="rtl">
+            <div class="contain">
+              <div class="ranking-table">
+                <div class="ranking-table-header-row">
+                    <div class="ranking-table-header-data h6">Rank</div>
+                    <div class="ranking-table-header-data h6">Name</div>
+                    <div class="ranking-table-header-data h6">Score</div>
+                </div>
+                <div class="ranking-table-row-leader-1" style="display: none;" id="rank_1_1_row">
+                    <div class="ranking-table-data-leader-1">
+                        <div class="medal-gold"></div>
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_1_1_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_1_1_grade">
+                    </div>
+                </div>
+                <div class="ranking-table-row-leader-1" style="display: none;" id="rank_1_2_row">
+                    <div class="ranking-table-data-leader-1">
+                        <div class="medal-gold"></div>
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_1_2_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_1_2_grade">
+                    </div>
+                </div>
+                <div class="ranking-table-row-leader-1" style="display: none;" id="rank_1_3_row">
+                    <div class="ranking-table-data-leader-1">
+                        <div class="medal-gold"></div>
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_1_3_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_1_3_grade">
+                    </div>
+                </div>
+                <div class="ranking-table-row-leader-2" style="display: none;" id="rank_2_1_row">
+                    <div class="ranking-table-data-leader-2">
+                        <div class="medal-silver"></div>
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_2_1_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_2_1_grade">
+                    </div>
+                </div>
+                <div class="ranking-table-row-leader-2" style="display: none;" id="rank_2_2_row">
+                    <div class="ranking-table-data-leader-2">
+                        <div class="medal-silver"></div>
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_2_2_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_2_2_grade">
+                    </div>
+                </div>
+                <div class="ranking-table-row-leader-2" style="display: none;" id="rank_2_3_row">
+                    <div class="ranking-table-data-leader-2">
+                        <div class="medal-silver"></div>
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_2_3_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_2_3_grade">
+                    </div>
+                </div>
+                <div class="ranking-table-row-leader-3" style="display: none;" id="rank_3_1_row">
+                    <div class="ranking-table-data-leader-3">
+                        <div class="medal-bronze"></div>
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_3_1_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_3_1_grade">
+                    </div>
+                </div>
+                <div class="ranking-table-row-leader-3" style="display: none;" id="rank_3_2_row">
+                    <div class="ranking-table-data-leader-3">
+                        <div class="medal-bronze"></div>
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_3_2_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_3_2_grade">
+                    </div>
+                </div>
+                <div class="ranking-table-row-leader-3" style="display: none;" id="rank_3_3_row">
+                    <div class="ranking-table-data-leader-3">
+                        <div class="medal-bronze"></div>
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_3_3_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_3_3_grade">
+                    </div>
+                </div>
+                <div class="ranking-table-body">
+                  <div class="ranking-table-row" style="display: none;" id="rank_4_row">
+                    <div class="ranking-table-data" id="rank_4_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_4_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_4_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_5_row">
+                    <div class="ranking-table-data" id="rank_5_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_5_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_5_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_6_row">
+                    <div class="ranking-table-data" id="rank_6_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_6_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_6_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_7_row">
+                    <div class="ranking-table-data" id="rank_7_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_7_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_7_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_8_row">
+                    <div class="ranking-table-data" id="rank_8_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_8_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_8_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_9_row">
+                    <div class="ranking-table-data" id="rank_9_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_9_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_9_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_10_row">
+                    <div class="ranking-table-data" id="rank_10_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_10_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_10_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_11_row">
+                    <div class="ranking-table-data" id="rank_11_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_11_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_11_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_12_row">
+                    <div class="ranking-table-data" id="rank_12_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_12_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_12_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_13_row">
+                    <div class="ranking-table-data" id="rank_13_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_13_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_13_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_14_row">
+                    <div class="ranking-table-data" id="rank_14_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_14_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_14_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_15_row">
+                    <div class="ranking-table-data" id="rank_15_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_15_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_15_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_16_row">
+                    <div class="ranking-table-data" id="rank_16_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_16_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_16_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_17_row">
+                    <div class="ranking-table-data" id="rank_17_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_17_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_17_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_18_row">
+                    <div class="ranking-table-data" id="rank_18_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_18_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_18_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_19_row">
+                    <div class="ranking-table-data" id="rank_19_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_19_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_19_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_20_row">
+                    <div class="ranking-table-data" id="rank_20_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_20_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_20_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_21_row">
+                    <div class="ranking-table-data" id="rank_21_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_21_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_21_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_22_row">
+                    <div class="ranking-table-data" id="rank_22_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_22_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_22_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_23_row">
+                    <div class="ranking-table-data" id="rank_23_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_23_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_23_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_24_row">
+                    <div class="ranking-table-data" id="rank_24_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_24_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_24_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_25_row">
+                    <div class="ranking-table-data" id="rank_25_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_25_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_25_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_26_row">
+                    <div class="ranking-table-data" id="rank_26_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_26_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_26_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_27_row">
+                    <div class="ranking-table-data" id="rank_27_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_27_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_27_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_28_row">
+                    <div class="ranking-table-data" id="rank_28_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_28_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_28_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_29_row">
+                    <div class="ranking-table-data" id="rank_29_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_29_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_29_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_30_row">
+                    <div class="ranking-table-data" id="rank_30_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_30_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_30_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_31_row">
+                    <div class="ranking-table-data" id="rank_31_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_31_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_31_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_32_row">
+                    <div class="ranking-table-data" id="rank_32_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_32_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_32_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_33_row">
+                    <div class="ranking-table-data" id="rank_33_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_33_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_33_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_34_row">
+                    <div class="ranking-table-data" id="rank_34_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_34_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_34_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_35_row">
+                    <div class="ranking-table-data" id="rank_35_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_35_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_35_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_36_row">
+                    <div class="ranking-table-data" id="rank_36_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_36_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_36_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_37_row">
+                    <div class="ranking-table-data" id="rank_37_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_37_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_37_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_38_row">
+                    <div class="ranking-table-data" id="rank_38_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_38_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_38_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_39_row">
+                    <div class="ranking-table-data" id="rank_39_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_39_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_39_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_40_row">
+                    <div class="ranking-table-data" id="rank_40_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_40_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_40_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_41_row">
+                    <div class="ranking-table-data" id="rank_41_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_41_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_41_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_42_row">
+                    <div class="ranking-table-data" id="rank_42_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_42_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_42_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_43_row">
+                    <div class="ranking-table-data" id="rank_43_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_43_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_43_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_44_row">
+                    <div class="ranking-table-data" id="rank_44_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_44_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_44_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_45_row">
+                    <div class="ranking-table-data" id="rank_45_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_45_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_45_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_46_row">
+                    <div class="ranking-table-data" id="rank_46_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_46_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_46_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_47_row">
+                    <div class="ranking-table-data" id="rank_47_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_47_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_47_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_48_row">
+                    <div class="ranking-table-data" id="rank_48_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_48_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_48_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_49_row">
+                    <div class="ranking-table-data" id="rank_49_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_49_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_49_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_50_row">
+                    <div class="ranking-table-data" id="rank_50_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_50_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_50_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_51_row">
+                    <div class="ranking-table-data" id="rank_51_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_51_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_51_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_52_row">
+                    <div class="ranking-table-data" id="rank_52_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_52_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_52_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_53_row">
+                    <div class="ranking-table-data" id="rank_53_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_53_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_53_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_54_row">
+                    <div class="ranking-table-data" id="rank_54_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_54_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_54_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_55_row">
+                    <div class="ranking-table-data" id="rank_55_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_55_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_55_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_56_row">
+                    <div class="ranking-table-data" id="rank_56_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_56_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_56_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_57_row">
+                    <div class="ranking-table-data" id="rank_57_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_57_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_57_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_58_row">
+                    <div class="ranking-table-data" id="rank_58_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_58_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_58_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_59_row">
+                    <div class="ranking-table-data" id="rank_59_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_59_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_59_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_60_row">
+                    <div class="ranking-table-data" id="rank_60_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_60_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_60_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_61_row">
+                    <div class="ranking-table-data" id="rank_61_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_61_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_61_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_62_row">
+                    <div class="ranking-table-data" id="rank_62_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_62_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_62_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_63_row">
+                    <div class="ranking-table-data" id="rank_63_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_63_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_63_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_64_row">
+                    <div class="ranking-table-data" id="rank_64_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_64_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_64_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_65_row">
+                    <div class="ranking-table-data" id="rank_65_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_65_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_65_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_66_row">
+                    <div class="ranking-table-data" id="rank_66_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_66_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_66_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_67_row">
+                    <div class="ranking-table-data" id="rank_67_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_67_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_67_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_68_row">
+                    <div class="ranking-table-data" id="rank_68_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_68_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_68_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_69_row">
+                    <div class="ranking-table-data" id="rank_69_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_69_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_69_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_70_row">
+                    <div class="ranking-table-data" id="rank_70_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_70_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_70_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_71_row">
+                    <div class="ranking-table-data" id="rank_71_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_71_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_71_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_72_row">
+                    <div class="ranking-table-data" id="rank_72_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_72_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_72_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_73_row">
+                    <div class="ranking-table-data" id="rank_73_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_73_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_73_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_74_row">
+                    <div class="ranking-table-data" id="rank_74_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_74_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_74_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_75_row">
+                    <div class="ranking-table-data" id="rank_75_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_75_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_75_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_76_row">
+                    <div class="ranking-table-data" id="rank_76_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_76_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_76_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_77_row">
+                    <div class="ranking-table-data" id="rank_77_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_77_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_77_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_78_row">
+                    <div class="ranking-table-data" id="rank_78_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_78_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_78_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_79_row">
+                    <div class="ranking-table-data" id="rank_79_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_79_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_79_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_80_row">
+                    <div class="ranking-table-data" id="rank_80_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_80_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_80_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_81_row">
+                    <div class="ranking-table-data" id="rank_81_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_81_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_81_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_82_row">
+                    <div class="ranking-table-data" id="rank_82_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_82_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_82_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_83_row">
+                    <div class="ranking-table-data" id="rank_83_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_83_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_83_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_84_row">
+                    <div class="ranking-table-data" id="rank_84_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_84_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_84_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_85_row">
+                    <div class="ranking-table-data" id="rank_85_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_85_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_85_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_86_row">
+                    <div class="ranking-table-data" id="rank_86_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_86_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_86_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_87_row">
+                    <div class="ranking-table-data" id="rank_87_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_87_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_87_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_88_row">
+                    <div class="ranking-table-data" id="rank_88_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_88_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_88_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_89_row">
+                    <div class="ranking-table-data" id="rank_89_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_89_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_89_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_90_row">
+                    <div class="ranking-table-data" id="rank_90_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_90_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_90_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_91_row">
+                    <div class="ranking-table-data" id="rank_91_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_91_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_91_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_92_row">
+                    <div class="ranking-table-data" id="rank_92_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_92_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_92_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_93_row">
+                    <div class="ranking-table-data" id="rank_93_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_93_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_93_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_94_row">
+                    <div class="ranking-table-data" id="rank_94_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_94_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_94_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_95_row">
+                    <div class="ranking-table-data" id="rank_95_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_95_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_95_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_96_row">
+                    <div class="ranking-table-data" id="rank_96_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_96_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_96_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_97_row">
+                    <div class="ranking-table-data" id="rank_97_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_97_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_97_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_98_row">
+                    <div class="ranking-table-data" id="rank_98_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_98_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_98_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_99_row">
+                    <div class="ranking-table-data" id="rank_99_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_99_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_99_grade">
+                    </div>
+                  </div>
+                  <div class="ranking-table-row" style="display: none;" id="rank_100_row">
+                    <div class="ranking-table-data" id="rank_100_id">
+                    </div>
+                    <div class="ranking-table-data af" style="font-weight: bold; font-size: 24px;" id="rank_100_name">
+                    </div>
+                    <div class="ranking-table-data" style="font-weight: bold;" id="rank_100_grade">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>        
+        </body>
+      </html>
+        </div>
+        <div class="home-social-bar">
+          <a href="https://www.instagram.com/zoatel">
+            <svg viewBox="0 0 877.7142857142857 1024" class="home-icon08">
+              <path
+                d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/zoatel">
+            <svg viewBox="0 0 602.2582857142856 1024" class="home-icon10">
+              <path
+                d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/zoatel">
+            <svg viewBox="0 0 1024 1024" class="home-icon12">
+              <path
+                d="M1013.8 307.2c0 0-10-70.6-40.8-101.6-39-40.8-82.6-41-102.6-43.4-143.2-10.4-358.2-10.4-358.2-10.4h-0.4c0 0-215 0-358.2 10.4-20 2.4-63.6 2.6-102.6 43.4-30.8 31-40.6 101.6-40.6 101.6s-10.2 82.8-10.2 165.8v77.6c0 82.8 10.2 165.8 10.2 165.8s10 70.6 40.6 101.6c39 40.8 90.2 39.4 113 43.8 82 7.8 348.2 10.2 348.2 10.2s215.2-0.4 358.4-10.6c20-2.4 63.6-2.6 102.6-43.4 30.8-31 40.8-101.6 40.8-101.6s10.2-82.8 10.2-165.8v-77.6c-0.2-82.8-10.4-165.8-10.4-165.8zM406.2 644.8v-287.8l276.6 144.4-276.6 143.4z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/ranking.js" type="module"></script>
+  </body>
+</html>
